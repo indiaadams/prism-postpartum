@@ -19,13 +19,10 @@ html {
     width: 100vw;
 }   
 
-/* body */
 body {
     position: relative;
     background-color: black;
     color: white;
-    /* margin: 15px;
-    margin-top: 40px; */
     margin: 0;
     font-family: 'ABCMaxiSharp', courier new, sans-serif;
     height: 100%;
@@ -55,7 +52,6 @@ main {
     }
 }
 
-/* h1 */
 h1 {
     font-size: 50px;
     margin-bottom: 21px;
@@ -102,17 +98,31 @@ footer {
 }
 
 @media (max-width: 685px) {
+    html {
+        height: -webkit-fill-available;
+        overflow: hidden;
+    }
+    
+    body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        overflow: hidden;
+    }
+    
+    main {
+        height: -webkit-fill-available;
+        overflow: hidden;
+    }
+
     h1 {
         width: 100%;
         max-width: none;
         font-size: 40px;
-        /* prevent h1 from wrapping */
         white-space: nowrap;
     }
-    main {
-        img {
-            max-width: none;
-            width: 100vw;
-        }
+    
+    main img {
+        max-width: none;
+        width: 100vw;
     }
 }
