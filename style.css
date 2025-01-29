@@ -51,6 +51,7 @@ main {
         z-index: -1;
         width: 100vw;
         max-width: 960px;
+        max-height: 100%;
     }
 }
 
