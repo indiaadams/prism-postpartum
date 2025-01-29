@@ -104,6 +104,9 @@ footer {
     h1 {
         width: 100%;
         max-width: none;
+        font-size: 40px;
+        /* prevent h1 from wrapping */
+        white-space: nowrap;
     }
     main {
         img {
