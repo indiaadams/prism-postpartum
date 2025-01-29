@@ -1,0 +1,114 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'ABCMaxiSharp';
+    src: url('fonts/ABCMaxiSharp-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    height: 100vh;
+    width: 100vw;
+}   
+
+/* body */
+body {
+    position: relative;
+    background-color: black;
+    color: white;
+    /* margin: 15px;
+    margin-top: 40px; */
+    margin: 0;
+    font-family: 'ABCMaxiSharp', courier new, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 15px 15px 15px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    img {
+        z-index: -1;
+        width: 100vw;
+        max-width: 960px;
+    }
+}
+
+/* h1 */
+h1 {
+    font-size: 50px;
+    margin-bottom: 21px;
+    font-weight: normal;
+    max-width: fit-content;
+}
+
+/* p */
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: courier new, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        color: #999;
+    }
+}
+
+footer {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    p {
+        font-size: 12px;
+    }
+}
+
+/* media queries */
+@media (max-width: 1440px) {
+    main {
+        img {
+            max-width: 683px;
+        }
+    }
+}
+
+@media (max-width: 685px) {
+    h1 {
+        width: 100%;
+        max-width: none;
+    }
+    main {
+        img {
+            max-width: none;
+            width: 100vw;
+        }
+    }
+}
